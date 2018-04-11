@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Address Book</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header-title"><p>ADDRESS BOOK</p>
+		<nav>
+          <ul style="margin:5px 0;">
+            <li><a href="index.html" style="float:right;margin:5px 10px 0 0;">View Contact</a></li>
+          </ul>
+        </nav>
+		</header>
+		<section class="row">
+			<div id="confirmation-box">
+          <p id="confirmation-msg"></p>
+        </div>
+		<form class="form-control" action="index.html" method="post" id="update-form">
+			<div class="contact-info">
+				<label for="fName">First Name</label>
+				<input type="text" name="firstname" id="fName" placeholder="First Name">
+			</div>
+			<div class="contact-info">
+				<label for="lName">Last Name</label>
+				<input type="text" name="lastname" id="lName" placeholder="Last Name" required>
+			</div>
+			<div class="contact-info">
+				<label for="phoneNo">Phone Number</label>
+				<input type="Phone" name="phone" id="phone" placeholder="Phone Number" maxlength="11" required>
+			</div>
+			<div class="contact-info">
+				<label for="email">Email Address</label>
+				<input type="email" name="email" id="email" placeholder="Email Address" required>
+			</div>
+			<div class="contact-info">
+				<label for="address">Residential Address:</label>
+				<input type="text" name="address" id="address" placeholder="Residential Address" required>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Save" class="customButton" required>
+			</div>
+			
+		</form>
+	</section>
+	</div>
+		
+	<script type="text/javascript" src="edit.js"></script>
+	
+</body>
+</html>

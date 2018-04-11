@@ -1,0 +1,236 @@
+body{
+	background-color: #717377;
+	font-size: 16px;
+}
+label{
+	display: block !important;
+}
+.header-title{
+	padding: 10px 0px  22px 0px;
+	background-color: #00f;
+	height: 60px;
+	color: #fff;
+	font-size: 36px;
+	font-family: 'Helvetica', 'Arial', 'sans-serif';
+	text-align: center;
+}
+
+/* style for the page container  */
+.container{
+	width: 80%;
+	background-color: #fff;
+	height: 630px;
+	float: left;
+	overflow: scroll;
+}
+
+/*  not necessary just trying out stuff */
+.row{
+	margin: auto;
+}
+
+/* form style */
+.form-control{
+	border: 1px dotted #000;
+	
+}
+.contact-label{
+	line-height: 36px;
+	font-weight: bolder;
+	margin: 10px 0px 2px 25px;
+	display: block;
+}
+
+#phoneNo{
+	line-height: 1.2em;
+	margin: 10px 10px 10px 25px;
+	width: 60%;
+	padding: 2px 0px 2px 5px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	float: left;
+}
+.btn-div{
+	margin-right: 10px;
+	float: right;
+}
+
+#phoneNo:focus{
+	background-color: #cdd;
+}
+.contact-list{
+	clear: both;
+}
+.contact-list-details{
+	margin-top: -20px;
+	margin-left: -5px;
+}
+.contact-list-alpha{
+	text-align: left;
+	padding: 15px 0px 0px 35px;
+	font-size: 2.5em;
+	font-weight: bolder;
+	color: #00f;
+	clear: both;
+}
+.contact-list-image{
+	margin: 20px 0px 0px 25px;
+	cursor: pointer;
+	float: left;
+	clear: both;
+}
+.contact-list-name{
+	float: left;
+	font-size: 1em;
+	padding-left: 10px;
+	padding-top: 30px;
+	line-height: 12px;
+}
+.contact-list-name a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+
+
+
+
+/* display for screen bigger than 856px */
+@media screen and (min-width: 857px){
+	.btn-div{
+		margin-right: 50px;
+	}
+	#phoneNo{
+		margin: 10px 10px 10px 65px;
+	}
+	.header-title{
+		padding: 10px 0px  18px 0px;
+	}
+} 
+
+/* display for screen bigger than 599px */
+@media screen and (min-width: 600px){
+	.container{
+		width: 50%;
+	}
+	.btn-div{
+		margin-right: 25px;
+	}
+
+} 
+
+/* Contact Form Styles */
+
+.container-edited{
+	width: 45%;
+	border: 2px solid #fff;
+	margin: 10px 2px 0px 30px !important;
+	float: left !important;
+}
+.form-control{
+
+}
+
+#lName, #fName, #email, #social, #address,#phone{
+	line-height: 1.2em;
+	margin: 10px 10px 10px 25px;
+	width: 80%;
+	padding: 2px 0px 2px 20px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	float: left;
+}
+
+label{
+	clear: both;
+	line-height: 36px;
+	font-weight: bolder;
+	margin: 10px 0px 2px 25px;
+	display: block;
+}
+.social-select{
+	float: left;
+	margin-left: 25px;
+	padding: 4px;
+	margin-top: 5px;
+}
+#social{
+	margin-right: 60px;
+	float: right;
+	width: 60%;
+	margin-top: -1px;
+}
+
+#submit, #cancelBtn{
+	clear: both;
+	padding: 8px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+#submit{
+	margin-left: 300px;
+}
+::placeholder{
+	padding-left: 10px;
+	font-style: italic;
+	font-size: 0.8em;
+	font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+
+#contact-list {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.contact {
+  list-style: none;
+  background-color: var(--theme-color);
+  font-size: 150%;
+  margin-bottom: 10px;
+  box-shadow: 2px 5px 5px var(--shadow-color);
+  overflow: hidden;
+}
+
+.contact-name {
+  padding-left: 5px;
+}
+
+.full-details {
+  background-color: inherit;
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+  text-align: left;
+  box-shadow: 5px 8px 20px var(--shadow-color);
+  font-size: 90%;
+}
+
+
+.modify {
+  float: right;
+}
+
+#add, #update {
+  float: right;
+  margin: 10px
+}
+
+.delete {
+  color: #f00;
+  background-color: transparent;
+  border: none;
+  font-size: 100%;
+}
+
+.edit {
+  color: rgba(0, 255, 0, .5);
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+.delete:hover, .edit:hover, #add:hover, #update:hover {
+  cursor: pointer;
+}
+
